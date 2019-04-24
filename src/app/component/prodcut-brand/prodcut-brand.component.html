@@ -1,0 +1,36 @@
+<!-- This is Product Brands Page -->
+
+
+<div style="text-align:center">
+    <h1>
+      Welcome to Product Page of this Application!
+    </h1>
+  </div>
+<div class="container" style="margin-top: 40px">
+
+    <div class="row">
+      
+      <table class="table table-striped">
+        <thead class="thead-dark">
+        <th>ProductId</th>
+        <th>Category</th>
+        <th>MainCategory</th>
+        <th>TaxTarifCode</th>
+        <th>SupplierName</th>
+
+        </thead>
+        <tbody>
+
+          <!-- Getting the data from json file which is stored in productData and printing it with the help of ngFor -->
+
+        <tr *ngFor="let data of productData; ">
+          <td>{{data.ProductId}}</td>
+          <td>{{data.Category}}</td>
+          <td>{{data.MainCategory}}</td>
+          <td>{{data.TaxTarifCode}}</td>
+          <td>{{data.SupplierName}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
